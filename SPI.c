@@ -1,5 +1,5 @@
 #include "SPI.h"
-
+#include "ENC28J60_map_register.h"
 
 
 void spi_cs_L()
@@ -45,3 +45,4 @@ uint8_t spi_rx_data()
 	while(!(SPSR&(1<<SPIF)));//ждем пока данные не передадутся
 	return SPDR;
 }
+

@@ -2,7 +2,8 @@
 #include "ENC28J60.h"
 
 
-void main()
+int main()
 {
 	while(1);
+	return 0;
 }
